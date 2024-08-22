@@ -1,0 +1,307 @@
+/* Custom Styles */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #02091b;
+    color: #cccccc;
+  }
+
+  .nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100%;
+    justify-content: end;
+    background: linear-gradient(to top, #02091b, #0a214b);
+  }
+
+  #globe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    z-index: 0;
+    margin-top: 80px;
+  }
+
+  .banner {
+    position: relative;
+    /* height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #02091b, #0a214b);
+    color: #000000;
+    padding: 10px;
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    background: #fdfdfd71;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    #globe {
+      width: 100%;
+      position: absolute;
+      height: 100px;
+    }
+
+    .banner-content {
+      width: 90%;
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #e69635ee;
+  }
+
+  p {
+    font-size: 18px;
+    color: rgb(186, 186, 186);
+    line-height: 1.5;
+  }
+
+  li {
+    margin: 10px;
+  }
+
+  .list-header {
+    color: azure;
+    font-size: 25px;
+  }
+
+  .material-icons {
+    vertical-align: middle;
+    margin-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  .reasons-list {
+    margin-bottom: 40px;
+  }
+
+  .reasons-list li {
+    padding-bottom: 10px;
+  }
+
+  .transistion-section {
+    margin-top: 40px;
+  }
+
+  .pricing-section {
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    background-color: #033346;
+    border-radius: 10px;
+  }
+
+  .chart-container {
+    margin-top: 40px;
+  }
+
+  .trust-section {
+    margin-top: 40px;
+  }
+
+  .analysis-section {
+    margin-top: 40px;
+  }
+
+  .call-to-action-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #ccc;
+  }
+
+  /* Style général du switcher */
+  .switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  /* Style des boutons du switcher */
+  .switcher button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+
+  /* Style pour le bouton actif */
+  .switcher button.active {
+    background-color: #4d3cff;
+    color: white;
+  }
+
+  /* Disposition en ligne (row) pour les écrans de bureau ou tablette */
+  @media (min-width: 768px) {
+    .switcher {
+      display: flex;
+      /* Utilisation de flex pour une disposition en ligne */
+      flex-direction: row;
+      /* Les boutons s'alignent horizontalement */
+    }
+
+    /* .banner {
+      height: 30%;
+    } */
+
+    .switcher button {
+      border-radius: 0;
+      /* Réinitialisation des coins arrondis */
+    }
+
+    .switcher button:first-child {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+
+    .switcher button:last-child {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  /* Disposition en grille (grid) pour les écrans mobiles */
+  @media (max-width: 767px) {
+    .navbar {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .switcher {
+      display: grid;
+      /* Utilisation de grid pour une disposition en grille */
+      grid-template-columns: repeat(3, minmax(80px, 1fr));
+      /* Colonnes adaptatives */
+      gap: 10px;
+      /* Espacement entre les boutons */
+    }
+
+    .switcher button {
+      border-radius: 5px;
+      /* Coins arrondis pour une meilleure esthétique */
+    }
+  }
+
+  .content {
+    display: none;
+  }
+
+  .content.active {
+    display: block;
+  }
+
+  .reasons-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .reasons-list li {
+    margin-bottom: 15px;
+  }
+
+  .list-header {
+    font-weight: bold;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  head {
+    background-color: purple;
+  }
+
+  a {
+    padding: 20px;
+    color: white;
+  }
+
+  /* Styles pour le tableau */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    /* Pour espacement entre les bordures */
+    text-align: left;
+  }
+
+
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  /* Bordures de couleur */
+  th,
+  td {
+    border-bottom: 1px solid white;
+    /* Bordures entre rangées */
+  }
+
+  th {
+    background-color: #333;
+    /* Couleur de fond pour les en-têtes */
+    color: white;
+    /* Couleur de texte */
+  }
+
+  td {
+    border-right: 1px solid grey;
+    /* Bordures entre colonnes */
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+    /* Supprimer la bordure du bas pour la dernière rangée */
+  }
+
+  /* Bouton pour tourner le tableau */
+  .rotate-btn {
+    display: inline-block;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .rotate-btn:hover {
+    background-color: #555;
+  }
+
+  /* Styles pour total */
+  .total {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+  }
